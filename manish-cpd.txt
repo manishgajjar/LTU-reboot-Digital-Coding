@@ -1,1 +1,7 @@
-Manish is giving an example
+Module / Session - date
+
+1.3. - 13/10/2020
+
+Reflection
+
+In todays session we were introduced to Git/GitHub. We were shown a quick demo on the advantagesof using VSCode. We installed a extension into VSCode. We have done a introductory demonstration of how to commit changes in files to a repo that we cloned onto our machine.
