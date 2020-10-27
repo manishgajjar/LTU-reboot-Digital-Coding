@@ -5,6 +5,8 @@ img {
 h1 {
     color: coral;
     background-color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
 }
 
 h2 {
