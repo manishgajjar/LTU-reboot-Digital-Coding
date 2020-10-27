@@ -49,3 +49,11 @@ ol li strong{
     color: rgb(228, 10, 10);
     background-color: rgb(45, 12, 235);
 }
+ul li strong{
+    font-size: 30px;
+    color: lime;
+}
+
+.yellow {
+    background-color: rgb(238, 255, 0);
+}
