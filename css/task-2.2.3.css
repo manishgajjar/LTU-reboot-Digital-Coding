@@ -1,0 +1,31 @@
+img {
+    max-width: 200px;
+}
+
+h1 {
+    color: coral;
+    background-color: grey;
+}
+
+h2 {
+    color: cornflowerblue;
+}
+
+h3 {
+    color: darkblue
+}
+
+h4 {
+    color: darkgoldenrod;
+}
+
+h5 {
+    color: tomato;
+}
+
+h6 {
+    color: teal;
+}
+body {
+    background-color:rgb(224, 224, 224);
+}
