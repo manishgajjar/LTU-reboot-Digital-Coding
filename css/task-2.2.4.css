@@ -44,3 +44,8 @@ p strong{
     color: rgb(86, 10, 228);
     background-color: rgb(255, 255, 255);
 }
+ol li strong{
+    font-size: 20px;
+    color: rgb(228, 10, 10);
+    background-color: rgb(45, 12, 235);
+}
