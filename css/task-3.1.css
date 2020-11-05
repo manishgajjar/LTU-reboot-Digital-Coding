@@ -1,0 +1,11 @@
+main{
+    max-width:75%;
+    float:left;
+}
+aside{
+    max-width:25%;
+    float:left;
+}
+footer{
+    clear:both;
+} 
