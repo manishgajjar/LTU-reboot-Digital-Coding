@@ -1,5 +1,5 @@
-function fullName( firstName, lastName ) {
-    return firstName + ' ' + lastName;
-}
+var temperature = 50;
 
-var userName = fullName('Manish', 'Gajjar');
+if (temperature < 50) {
+    console.log ('Put your coat on');
+}
