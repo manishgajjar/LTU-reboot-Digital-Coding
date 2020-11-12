@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task-3.3.2</title>
+<title>Task-3.3.3</title>
 </head>
 <body>
     <header>
-        <h1>JavaScript Task 3.3.2</h1>
+        <h1>JavaScript Task 3.3.3</h1>
     </header>
     <main>
         
@@ -27,19 +27,19 @@
         var maths;
         switch (operator){
             case '+':
-                maths = number1 + number2
+                maths = number1 + number2;
                 break;
             case '-':
-                maths = number1 - number2
+                maths = number1 - number2;
                 break;
             case '*':
-                maths = number1 * number2
+                maths = number1 * number2;
                 break;
             case '/':
-                maths = number1 / number2
+                maths = number1 / number2;
                 break;
             case '%':
-                maths = number1 % number2
+                maths = number1 % number2;
                 break;
         }
         return maths;
@@ -48,8 +48,20 @@ var a=10;
 var b=3;
 
 var strMessage = a + '+' + b + '=' + calculator(a,b,'+');
+console.log (strMessage);
+strMessage = a - '-' + b + '=' + calculator(a,b,'-');
+console.log (strMessage);
+strMessage = a - '*' + b + '=' + calculator(a,b,'*');
+console.log (strMessage);
+strMessage = a - '/' + b + '=' + calculator(a,b,'/');
+console.log (strMessage);
+strMessage = a - '%' + b + '=' + calculator(a,b,'%');
+console.log (strMessage);
 
-
+total = 250;
+percent = 50;
+totalPercentage = calculator (percent,calculator(total,100,'/'),'*');
+console.log (totalPercentage);
 
 </script>
 
