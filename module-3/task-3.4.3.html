@@ -23,21 +23,80 @@
 
 <script>
 
-    var objRecipe = [
-        {
-            receipeTitle: 'Beans on toast',
-            servings: 1,
-            ingredients: [
-                'bread',
-                'baked beans',
-                'vegan cheese',
-                'chilli flakes',
-            ]
-            directions: [
-                
-            ]
+var objRecipe = [
+            {
+                recipeTitle:'beans on toast',
+                servings:1,
+                ingredients:[
+                    'baked beans',
+                    'bread',
+                    'butter',
+                    'black pepper'
+                ],
+                directions:[
+                    'put beans in pan and heat on hob until bubbling',
+                    'place bread in toaster',
+                    'spread butter on toast',
+                    'place beans onto toast',
+                    'put black pepper onto beans'
+                ],
+                details: function(){
+                    console.log(this.recipeTitle);
+                    console.log('serves: '+this.servings);
+                    console.log('ingredients');
+                    for(i=0; i < this.ingredients.length; i++){
+                        ingredient = this.ingredients[i];
+                        console.log(ingredient);
+                    }
+                    console.log('');
+                    console.log('directions');
+                    for(i=0; i < this.directions.length; i++){
+                        direction = this.directions[i];
+                        console.log(direction);
+                    }
+                    console.log('');
+                    console.log('');
+                }
+            },
+            {
+                recipeTitle:'eggs on toast',
+                servings:1,
+                ingredients:[
+                    'eggs',
+                    'bread',
+                    'butter',
+                    'black pepper'
+                ],
+                directions:[
+                    'put eggs in a frying pan and heat on hob for 5 minutes',
+                    'place bread in toaster',
+                    'spread butter on toast',
+                    'place beans onto toast',
+                    'put black pepper onto beans'
+                ],
+                details: function(){
+                    console.log(this.recipeTitle);
+                    console.log('serves: '+this.servings);
+                    console.log('ingredients');
+                    for(i=0; i < this.ingredients.length; i++){
+                        ingredient = this.ingredients[i];
+                        console.log(ingredient);
+                    }
+                    console.log('');
+                    console.log('directions');
+                    for(i=0; i < this.directions.length; i++){
+                        direction = this.directions[i];
+                        console.log(direction);
+                    }
+                    console.log('');
+                    console.log('');
+                }
+            }
+        ];
+        for(counter=0; counter < objRecipe.length; counter++){
+            recipe = objRecipe[counter];
+            recipe.details();
         }
-    ]
 
 </script>
 
