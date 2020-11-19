@@ -36,7 +36,7 @@
             {name:"onions",type:"food",quantity:3,price:.4}
         ];
 
-    function itemPriceRange (arrCart, lowPrice, highPrice, quantity=false) {
+    function itemPriceRange (arrCart, lowPrice, highPrice, quantity=false){
         //testing the object is correct
         console.log(arrCart);
         console.log(lowPrice);
@@ -54,17 +54,16 @@
                 itemPrice = itemPrice * currentItem.quantity;
             }
             //if the item price is higher than or equal to the low price and lower than or equal to the low price
-            if(itemPrice >= lowPrice && itemPrice <== highPrice){
+            if(itemPrice >= lowPrice && itemPrice <= highPrice){
                 //add the items that pass the conditional logic to the array of the items being returned
                 arrItems.push(currentItem);
             }
-    }
-    return arrItems;
+        }
+        return arrItems;
 
     var arrPriceRangeItems = itemPriceRange(arrShoppingCart,1,4);
     console.log(arrPriceRangeItems);
-
-    var 
+    }
 
 </script>
 
