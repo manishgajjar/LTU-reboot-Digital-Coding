@@ -50,12 +50,19 @@
                 //testing the counter abd the cuttent item are correct
                 console.log (counter);
                 console.log (currentItemTotal);
-                
+                //add the quanity * price of the object to total price
+                currentItemTotal = currentItem ['quanity'] * currentItem.price;
+                console.log (currentItemTotal);
+                totalPrice = totalPrice + currentItemTotal;
+                console.log (totalPrice);
             }
+            //return the total price
+            totalPrice = totalPrice.toFixed(2);
+            return totalPrice;
         }
 
-        getTotalPrice(arrShoppingCart);
-
+        var cartTotal = getTotalPrice(arrShoppingCart);
+        console.log ('cartTotal: ' + cartTotal);
 
 </script>
 
