@@ -1,73 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task-3.6.1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>JavaScript Task 3.6.1</h1>
+        <h1>Javascript task 3.6.1</h1>
     </header>
     <main>
-        
+        <div id="imageContainer">
+            <img id="changeMe" src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+        </div>
     </main>
-
     <aside>
-
     </aside>
-
     <footer>
-       <p>&copy; 2020</p>
+        <p>&copy; 2020</p>
     </footer>
+    <script>
 
-<script>
-
-    var arrShoppingCart=[
-            {name:"loaf of bread",type:"food",quantity:1,price:.85},
-            {name:"multipack beans",type:"food",quantity:1,price:1},
-            {name:"mushrooms",type:"food",quantity:10,price:.1},
-            {name:"can of beer",type:"alcohol",quantity:4,price:1.1},
-            {name:"prosecco",type:"alcohol",quantity:1,price:8.99},
-            {name:"steak",type:"food",quantity:2,price:3.99},
-            {name:"blue cheese",type:"food",quantity:1,price:2.99},
-            {name:"candles",type:"home",quantity:3,price:1.99},
-            {name:"cheesecake",type:"food",quantity:1,price:4.99},
-            {name:"onions",type:"food",quantity:3,price:.4}
-        ];
-
-    function itemPriceRange (arrCart, lowPrice, highPrice, quantity=false){
-        //testing the object is correct
-        console.log(arrCart);
-        console.log(lowPrice);
-        console.log(highPrice);
-        //create an array to populate with items between the ranges
-        var arrItems = []
-        for (counter = 0; counter < arrCart.length; counter++){
-            //setting a variable to be the current cart item
-            currentItem = arrCart [counter];
-            console.log(currentItem);
-            //setting the variable for the item price so it can be manipulated if required
-            itemPrice = currentItem.price;
-            //if quantity is true then the amount of items in the cart is accounted for
-            if(quantity){
-                itemPrice = itemPrice * currentItem.quantity;
-            }
-            //if the item price is higher than or equal to the low price and lower than or equal to the low price
-            if(itemPrice >= lowPrice && itemPrice <= highPrice){
-                //add the items that pass the conditional logic to the array of the items being returned
-                arrItems.push(currentItem);
-            }
-        }
-        return arrItems;
-    }
-
-    var arrPriceRangeItems = itemPriceRange(arrShoppingCart,1,4);
-    console.log(arrPriceRangeItems);
-    arrPriceRangeItems = itemPriceRange(arrShoppingCart,1,4,true);
-    console.log(arrPriceRangeItems);
-
-</script>
-
+        var image = document.getElementById('changeMe');
+        var newSrc = 'https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+        image.src = newSrc;
+        var container = document.getElementById('imageContainer').style.border = '3px dashed red';
+    </script>
 </body>
 </html>
