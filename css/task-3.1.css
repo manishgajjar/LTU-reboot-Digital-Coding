@@ -9,3 +9,6 @@ aside{
 footer{
     clear:both;
 } 
+img {
+    max-width: 700px;
+}
