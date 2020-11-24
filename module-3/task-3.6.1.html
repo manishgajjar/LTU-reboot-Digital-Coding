@@ -12,7 +12,7 @@
     </header>
     <main>
         <div id="imageContainer">
-            <img id="changeMe" src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img id="changeMe" src="https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
         </div>
     </main>
     <aside>
@@ -23,9 +23,20 @@
     <script>
 
         var image = document.getElementById('changeMe');
-        var newSrc = 'https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
+        var newSrc = 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
         image.src = newSrc;
-        var container = document.getElementById('imageContainer').style.border = '1px solid grey';
+        var container = document.getElementById('imageContainer')
+        container.style.border = '3px solid grey';
+
+        var paragraph = document.createElement('p');
+        paragraph.innerHTML = 'Hello LTU Class';
+        // console.log(paragraph);
+        container.appendChild(paragraph);
+        image.addEventListener('mouseover', function(event){
+
+        }        ]
+
     </script>
+
 </body>
 </html>
