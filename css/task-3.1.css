@@ -1,14 +1,37 @@
 main{
-    max-width:75%;
+    max-width:calc(75%);
     float:left;
 }
 aside{
-    max-width:25%;
-    float:left;
+    max-width: calc(25%);
+    float: left;
+    border-left: none;
 }
 footer{
     clear:both;
-} 
-img {
-    max-width: 600px;
+}
+
+img{
+    max-width:100%;
+}
+
+.redDashedBorder{
+    border:3px dashed red;
+}
+
+.imageFilter{
+    width:200px;
+    float:left;
+}
+
+.imageFilter img{
+    max-width:100%;
+}
+
+.filterContainer{
+    margin-bottom:50px;
+}
+
+.selectedFilter{
+    border:1px solid red;
 }
